@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Estilos do cabeçalho de navegação */
+nav {
+    width: 100%;
+    background-color: #0097a7;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #80deea;
+}
+
+/* Container principal */
+.container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Título */
+.container h2 {
+    color: #006064;
+    margin-bottom: 15px;
+}
+
+/* Barra de pesquisa */
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0097a7;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+#searchBar:focus {
+    border-color: #80deea;
+}
+
+/* Botão de pesquisa */
+#searchButton {
+    background-color: #0097a7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #007c91;
+}
+
+/* Lista de peixes */
+#fishList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#fishList li {
+    padding: 10px;
+    border-bottom: 1px solid #e0f7fa;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

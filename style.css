@@ -1,0 +1,123 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    background-color: #0097a7;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #80deea;
+}
+
+/* Container principal */
+.content {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Artigo de notícia */
+.news-article {
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Imagem da notícia */
+.news-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+/* Detalhes da notícia */
+.news-details {
+    flex: 1;
+}
+
+/* Título da notícia */
+.news-title {
+    font-size: 1.5em;
+    color: #006064;
+    margin-bottom: 8px;
+}
+
+/* Subtítulo da notícia */
+.news-subtitle {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Conteúdo da notícia */
+.news-content {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .news-article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-image {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
